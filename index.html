@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Wifeo React Editor</title>
 
     <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF"
-      crossorigin="anonymous"
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF"
+            crossorigin="anonymous"
     />
 
     <!-- <link href="/src/global.css" rel="stylesheet" /> -->
     <link
-      href="https://cdn-app-wifeosite.fra1.cdn.digitaloceanspaces.com/wifeolib/1.0.0/global.css"
-      rel="stylesheet"
+            href="https://cdn-app-wifeosite.fra1.cdn.digitaloceanspaces.com/wifeolib/1.0.0/global.css"
+            rel="stylesheet"
     />
 
     <!--     <link
@@ -29,12 +29,12 @@
     /> -->
 
     <link
-      href="https://cdn-app-wifeosite.fra1.cdn.digitaloceanspaces.com/wifeolib/1.0.0/editorStyle.css"
-      rel="stylesheet"
+            href="https://cdn-app-wifeosite.fra1.cdn.digitaloceanspaces.com/wifeolib/1.0.0/editorStyle.css"
+            rel="stylesheet"
     />
     <link
-      href="https://cdn-app-wifeosite.fra1.cdn.digitaloceanspaces.com/wifeolib/1.0.0/sortableTreeEditor.css"
-      rel="stylesheet"
+            href="https://cdn-app-wifeosite.fra1.cdn.digitaloceanspaces.com/wifeolib/1.0.0/sortableTreeEditor.css"
+            rel="stylesheet"
     />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -43,12 +43,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/fr.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;500;700&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;500;700&display=swap"
+            rel="stylesheet"
     />
 
     <!-- <link  rel="stylesheet" href="https://editor.wifeosite.com/assets/css/styles.css?v=1580395078917"/> -->
@@ -56,119 +56,119 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/plupload/2.3.6/plupload.full.min.js"></script>
 
     <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"
     />
 
     <link
-      rel="stylesheet"
-      href="https://uicdn.toast.com/tui-image-editor/latest/tui-image-editor.css"
+            rel="stylesheet"
+            href="https://uicdn.toast.com/tui-image-editor/latest/tui-image-editor.css"
     />
 
     <script>
-      window.__ENV_MODE = Object.freeze({
-        production: false,
-        subdomain: "",
-        domainApi: "",
-        scheme: "https",
-        domain: "epicblue.fr",
-        // Utiliser les cdn de dev ou prod
-        reactProd: false,
-        // utilise le domain amazon ou non ()
-        apiProd: false,
-        pathApps: "admin.epicblue.fr",
-        // chemin du front pour réserver un nom de domaine
-        pathToBuyDomain: "domaines",
-        pathToBuyPlans: "offres",
-        pathParent: null,
-        // Pour la page dashboard/facturation
-        uidPaiementWifeosite: {
-          distant_id: 7,
-          uid: "832D00A7-4E51-4438-8754-3BE4F30C3F34",
-        },
-        // version des fichiers statics, pour forcer le rafraichement des fichiers apres une maj
-        // correspond a Date.now()
-        versionFiles: "0.0.0",
-        hostWifeoCms: "www.wifeocms.com",
-      });
+        window.__ENV_MODE = Object.freeze({
+            production: false,
+            subdomain: "",
+            domainApi: "",
+            scheme: "https",
+            domain: "epicblue.fr",
+            // Utiliser les cdn de dev ou prod
+            reactProd: false,
+            // utilise le domain amazon ou non ()
+            apiProd: false,
+            pathApps: "admin.epicblue.fr",
+            // chemin du front pour réserver un nom de domaine
+            pathToBuyDomain: "domaines",
+            pathToBuyPlans: "offres",
+            pathParent: null,
+            // Pour la page dashboard/facturation
+            uidPaiementWifeosite: {
+                distant_id: 7,
+                uid: "832D00A7-4E51-4438-8754-3BE4F30C3F34",
+            },
+            // version des fichiers statics, pour forcer le rafraichement des fichiers apres une maj
+            // correspond a Date.now()
+            versionFiles: "0.0.0",
+            hostWifeoCms: "www.wifeocms.com",
+        });
     </script>
 
     <script>
-      window["__CONTAINER_ORDERS"] = [];
-      window.__PLAN_SITE = "PRO";
-      window.__METADATA = null;
+        window["__CONTAINER_ORDERS"] = [];
+        window.__PLAN_SITE = "PRO";
+        window.__METADATA = null;
     </script>
-  <link rel="shortcut icon" href="https://editor.epicmagenta.com/editor/favicon-32x32.ico"></head>
+<link rel="shortcut icon" href="https://editor.epicmagenta.com/editor/favicon-32x32.ico"></head>
 
-  <body class="we-bg-dark">
-    <script
-      crossorigin
-      src="https://unpkg.com/react@16/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/1.6.4/react-bootstrap.min.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.22.0/axios.min.js"
-      integrity="sha512-m2ssMAtdCEYGWXQ8hXVG4Q39uKYtbfaJL5QMTbhl2kc6vYyubrKHhr6aLLXW4ITeXSywQLn1AhsAaqrJl8Acfg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+<body class="we-bg-dark">
+<script
+        crossorigin
+        src="https://unpkg.com/react@16/umd/react.development.js"
+></script>
+<script
+        crossorigin
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/1.6.4/react-bootstrap.min.js"
+        crossorigin
+></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.22.0/axios.min.js"
+        integrity="sha512-m2ssMAtdCEYGWXQ8hXVG4Q39uKYtbfaJL5QMTbhl2kc6vYyubrKHhr6aLLXW4ITeXSywQLn1AhsAaqrJl8Acfg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+></script>
 
-    <script
-      type="text/javascript"
-      src="https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/1.0.0/lib.js"
-    ></script>
-
-    <!-- <script
+<script
         type="text/javascript"
-        src="http://localhost:4206/wifeolib.bundle.js"
+        src="https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/1.0.30/lib.js"
+></script>
+
+<!--  <script
+    type="text/javascript"
+    src="http://localhost:4206/wifeolib.bundle.js"
 ></script> -->
 
-    <script
-      type="text/javascript"
-      src="https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/1.0.0/media-library-rcpt.min.js"
-    ></script>
+<script
+        type="text/javascript"
+        src="https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/1.0.0/media-library-rcpt.min.js"
+></script>
 
-    <div id="root"></div>
-    <div id="modal-sortable-tree-editor"></div>
-  <script type="text/javascript" src="https://editor.epicmagenta.com/editor/bundle.js"></script></body>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-  />
-  <style>
+<div id="root"></div>
+<div id="modal-sortable-tree-editor"></div>
+<script type="text/javascript" src="https://editor.epicmagenta.com/editor/bundle.js"></script></body>
+<link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+/>
+<style>
     .tui-image-editor-header {
-      display: none;
+        display: none;
     }
 
     .tui-image-editor-container
-      .tui-image-editor-submenu
-      .tui-image-editor-submenu-item
-      .tui-image-editor-button.apply
-      label,
+    .tui-image-editor-submenu
+    .tui-image-editor-submenu-item
+    .tui-image-editor-button.apply
+    label,
     .tui-image-editor-container
-      .tui-image-editor-submenu
-      .tui-image-editor-submenu-item
-      .tui-image-editor-button.cancel
-      label {
-      font-size: 20px;
+    .tui-image-editor-submenu
+    .tui-image-editor-submenu-item
+    .tui-image-editor-button.cancel
+    label {
+        font-size: 20px;
     }
 
     .popup-content {
-      background-color: #212121 !important;
-      background-clip: padding-box !important;
-      padding: 1rem 1rem !important;
-      color: #e1e1e1 !important;
-      border: none !important;
-      border-radius: 0px;
-      margin: 0px;
+        background-color: #212121 !important;
+        background-clip: padding-box !important;
+        padding: 1rem 1rem !important;
+        color: #e1e1e1 !important;
+        border: none !important;
+        border-radius: 0px;
+        margin: 0px;
     }
-  </style>
+</style>
 </html>
