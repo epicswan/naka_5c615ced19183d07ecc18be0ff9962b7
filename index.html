@@ -1,177 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
+  <head>
+    <meta charset="UTF-8" />
     <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Wifeo Editor preprod</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Wifeo Preprod Editor</title>
 
-    <link rel="stylesheet"
-          href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
-          crossorigin="anonymous">
-
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH"
+      crossorigin="anonymous"
+    />
 
     <!-- <link href="/src/global.css" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="https://cdn-app-wifeosite.fra1.cdn.digitaloceanspaces.com/wifeolib/1.0.0/global.css"
-          integrity="sha384-a5fX784hR8IMobi5QVzSsxrhHOeuEdJH5LKeAWs61qUQAwatvX+PDyKQFUnjyNVd" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn-app-wifeosite.fra1.cdn.digitaloceanspaces.com/wifeolib/1.0.0/global.css"
+      integrity="sha384-a5fX784hR8IMobi5QVzSsxrhHOeuEdJH5LKeAWs61qUQAwatvX+PDyKQFUnjyNVd"
+      crossorigin="anonymous"
+    />
 
     <!--     <link
       href="https://editor.wifeosite.com/assets/bootstrap/wifeo/css/global.css"
       rel="stylesheet"
     /> -->
 
-    <link rel="stylesheet"
-          href="https://cdn-app-wifeosite.fra1.cdn.digitaloceanspaces.com/wifeolib/1.0.0/editorStyle.css"
-          integrity="sha384-Rop6Vn1tcpSeF3EWR7oLJ/QPgDMHP0chTu+sxqzpOaHnfAfNCGGBMlPfP9HDELSw" crossorigin="anonymous">
-    <link rel="stylesheet"
-          href="https://cdn-app-wifeosite.fra1.cdn.digitaloceanspaces.com/wifeolib/1.0.0/sortableTreeEditor.css"
-          integrity="sha384-Cser7ZKn7ZD6FPPz8UJ+7P7BmRStVFFukgTBllqgWfApNCUzhlD3hICZfQlkJ2Ab" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn-app-wifeosite.fra1.cdn.digitaloceanspaces.com/wifeolib/1.0.0/editorStyle.css"
+      integrity="sha384-Rop6Vn1tcpSeF3EWR7oLJ/QPgDMHP0chTu+sxqzpOaHnfAfNCGGBMlPfP9HDELSw"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-app-wifeosite.fra1.cdn.digitaloceanspaces.com/wifeolib/1.0.0/sortableTreeEditor.css"
+      integrity="sha384-Cser7ZKn7ZD6FPPz8UJ+7P7BmRStVFFukgTBllqgWfApNCUzhlD3hICZfQlkJ2Ab"
+      crossorigin="anonymous"
+    />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-            integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
-            integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"
-            integrity="sha384-sIzeKWIAHvT0Vm8QbfLCqZwBG0WMCkWVAOYd/330YSNeeQ1Y57N3T9lQz5Ry/EHH"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/fr.js"
-            integrity="sha384-3FwcuGMawv/mFO8kXToMwqRL3Zo2DEwdA2OFneqE7qQgBH+aAlacqr/XVZnSKhdB"
-            crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+      integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+      integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"
+      integrity="sha384-sIzeKWIAHvT0Vm8QbfLCqZwBG0WMCkWVAOYd/330YSNeeQ1Y57N3T9lQz5Ry/EHH"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/fr.js"
+      integrity="sha384-3FwcuGMawv/mFO8kXToMwqRL3Zo2DEwdA2OFneqE7qQgBH+aAlacqr/XVZnSKhdB"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"
-            integrity="sha384-VQ/s69HNVae2KRxQ+LtbCGJfHpjBvY9z9DHQ0VYRyyUzOmLwH2+CeplFdhQhVgbe"
-            crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"
+      integrity="sha384-VQ/s69HNVae2KRxQ+LtbCGJfHpjBvY9z9DHQ0VYRyyUzOmLwH2+CeplFdhQhVgbe"
+      crossorigin="anonymous"
+    ></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;500;700&display=swap"
-        >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;500;700&display=swap"
+      crossorigin="anonymous"
+    />
 
     <!-- <link  rel="stylesheet" href="https://editor.wifeosite.com/assets/css/styles.css?v=1580395078917"/> -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/plupload/2.3.6/plupload.full.min.js"
-            integrity="sha384-PlFQ/ew6Hus7ZaqQHr7Uncb7qq7bCSD2i+vDeDcjNkwdohiQKL7cZghBGYdEmG8C"
-            crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"
-          integrity="sha384-1UXhfqyOyO+W+XsGhiIFwwD3hsaHRz2XDGMle3b8bXPH5+cMsXVShDoHA3AH/y/p" crossorigin="anonymous">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/plupload/2.3.6/plupload.full.min.js"
+      integrity="sha384-PlFQ/ew6Hus7ZaqQHr7Uncb7qq7bCSD2i+vDeDcjNkwdohiQKL7cZghBGYdEmG8C"
+      crossorigin="anonymous"
+    ></script>
 
     <link
-            rel="stylesheet"
-            href="https://uicdn.toast.com/tui-image-editor/latest/tui-image-editor.css"
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"
+      integrity="sha384-1UXhfqyOyO+W+XsGhiIFwwD3hsaHRz2XDGMle3b8bXPH5+cMsXVShDoHA3AH/y/p"
+      crossorigin="anonymous"
     />
 
-    <script>
-        window.__ENV_MODE = Object.freeze({
-            production: false,
-            subdomain: "",
-            domainApi: "",
-            scheme: "https",
-            domain: "epicblue.fr",
-            // Utiliser les cdn de dev ou prod
-            reactProd: false,
-            // utilise le domain amazon ou non ()
-            apiProd: false,
-            pathApps: "admin.epicblue.fr",
-            // chemin du front pour réserver un nom de domaine
-            pathToBuyDomain: "domaines",
-            pathToBuyPlans: "offres",
-            pathParent: null,
-            // Pour la page dashboard/facturation
-            uidPaiementWifeosite: {
-                distant_id: 7,
-                uid: "832D00A7-4E51-4438-8754-3BE4F30C3F34",
-            },
-            // version des fichiers statics, pour forcer le rafraichement des fichiers apres une maj
-            // correspond a Date.now()
-            versionFiles: "0.0.0",
-            hostWifeoCms: "www.wifeocms.com",
-        });
-    </script>
+    <link
+      rel="stylesheet"
+      href="https://uicdn.toast.com/tui-image-editor/latest/tui-image-editor.css"
+    />
+
 
     <script>
-        window["__CONTAINER_ORDERS"] = [];
-        window.__PLAN_SITE = "PRO";
-        window.__METADATA = null;
+      window["__CONTAINER_ORDERS"] = [];
+      window.__PLAN_SITE = "PRO";
+      window.__METADATA = null;
     </script>
-<link rel="shortcut icon" href="https://editor.epicmagenta.com/editor/favicon-32x32.ico"></head>
+  <link rel="shortcut icon" href="http://editor.epiclocal.com/editor/favicon-32x32.ico"></head>
 
-<body class="we-bg-dark">
+  <body class="we-bg-dark">
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
 
-<script
-        crossorigin
-        src="https://unpkg.com/react@16/umd/react.development.js"
-></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
 
-<script
-        crossorigin
-        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/1.6.4/react-bootstrap.min.js"
+      integrity="sha384-5tNg2vWoP40PVtI8W0Fj6yZ74NESmbHx4b0TETeB3MZcdsWh1KY4W4CJgIJdw/QI"
+      crossorigin="anonymous"
+    ></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/1.6.4/react-bootstrap.min.js"
-        integrity="sha384-5tNg2vWoP40PVtI8W0Fj6yZ74NESmbHx4b0TETeB3MZcdsWh1KY4W4CJgIJdw/QI"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.22.0/axios.min.js"
+      integrity="sha512-m2ssMAtdCEYGWXQ8hXVG4Q39uKYtbfaJL5QMTbhl2kc6vYyubrKHhr6aLLXW4ITeXSywQLn1AhsAaqrJl8Acfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-<script
-        src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.22.0/axios.min.js"
-        integrity="sha512-m2ssMAtdCEYGWXQ8hXVG4Q39uKYtbfaJL5QMTbhl2kc6vYyubrKHhr6aLLXW4ITeXSywQLn1AhsAaqrJl8Acfg=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-></script>
+    <script src="https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/1.0.38/lib.js" integrity="sha384-ie54TA5Dxa0gJKJO/By7t4COloY9axJyz/oom+havOiwyEzq/QcfYbmumVx/Dkeg" crossorigin="anonymous"></script> 
+    <script
+      src="https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/1.0.0/media-library-rcpt.min.js"
+      crossorigin="anonymous"
+    ></script>
 
-<script src="https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/1.0.38/lib.js"  crossorigin="anonymous"></script>
-
-<!--<script
-        type="text/javascript"
-        src="http://localhost:4206/wifeolib.bundle.js"
-></script>-->
-
-<script src="https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/1.0.0/media-library-rcpt.min.js"
-        crossorigin="anonymous"></script>
-
-<div id="root"></div>
-<div id="modal-sortable-tree-editor"></div>
-<script type="text/javascript" src="https://editor.epicmagenta.com/editor/bundle.js"></script></body>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-      integrity="sha384-7/Tl0k65OTvDSvtuq7aPR7aa0aCz7ZKqHsbMRLxhzueldW+9MZpCe9LB1c5UBuNS" crossorigin="anonymous">
-<style>
+    <div id="root"></div>
+    <div id="modal-sortable-tree-editor"></div>
+  <script type="text/javascript" src="http://editor.epiclocal.com/editor/bundle.js"></script></body>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    integrity="sha384-7/Tl0k65OTvDSvtuq7aPR7aa0aCz7ZKqHsbMRLxhzueldW+9MZpCe9LB1c5UBuNS"
+    crossorigin="anonymous"
+  />
+  <style>
     .tui-image-editor-header {
-        display: none;
+      display: none;
     }
 
     .tui-image-editor-container
-    .tui-image-editor-submenu
-    .tui-image-editor-submenu-item
-    .tui-image-editor-button.apply
-    label,
+      .tui-image-editor-submenu
+      .tui-image-editor-submenu-item
+      .tui-image-editor-button.apply
+      label,
     .tui-image-editor-container
-    .tui-image-editor-submenu
-    .tui-image-editor-submenu-item
-    .tui-image-editor-button.cancel
-    label {
-        font-size: 20px;
+      .tui-image-editor-submenu
+      .tui-image-editor-submenu-item
+      .tui-image-editor-button.cancel
+      label {
+      font-size: 20px;
     }
 
     .popup-content {
-        background-color: #212121 !important;
-        background-clip: padding-box !important;
-        padding: 1rem 1rem !important;
-        color: #e1e1e1 !important;
-        border: none !important;
-        border-radius: 0px;
-        margin: 0px;
+      background-color: #212121 !important;
+      background-clip: padding-box !important;
+      padding: 1rem 1rem !important;
+      color: #e1e1e1 !important;
+      border: none !important;
+      border-radius: 0px;
+      margin: 0px;
     }
-</style>
+  </style>
 </html>
