@@ -17,15 +17,12 @@
       crossorigin="anonymous"
     />
 
-
     <link
       rel="stylesheet"
       href="https://cdn-app-wifeosite.fra1.cdn.digitaloceanspaces.com/wifeolib/1.0.0/global.css"
       integrity="sha384-a5fX784hR8IMobi5QVzSsxrhHOeuEdJH5LKeAWs61qUQAwatvX+PDyKQFUnjyNVd"
       crossorigin="anonymous"
     />
-
-
 
     <link
       rel="stylesheet"
@@ -81,7 +78,6 @@
       crossorigin="anonymous"
     />
 
-
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/plupload/2.3.6/plupload.full.min.js"
       integrity="sha384-PlFQ/ew6Hus7ZaqQHr7Uncb7qq7bCSD2i+vDeDcjNkwdohiQKL7cZghBGYdEmG8C"
@@ -100,13 +96,16 @@
       href="https://uicdn.toast.com/tui-image-editor/latest/tui-image-editor.css"
     />
 
-
     <script>
       window["__CONTAINER_ORDERS"] = [];
       window.__PLAN_SITE = "PRO";
       window.__METADATA = null;
     </script>
-  <link rel="shortcut icon" href="https://editor.epicmagenta.com/editor/favicon-32x32.ico"></head>
+    <link
+      rel="shortcut icon"
+      href="https://editor.epicmagenta.com/editor/favicon-32x32.ico"
+    />
+  </head>
 
   <body class="we-bg-dark">
     <script
@@ -132,17 +131,104 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script src="https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/1.0.51/lib.js"
-     crossorigin="anonymous"></script> 
-
-    <script
-      src="https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/1.0.0/media-library-rcpt.min.js"
-      crossorigin="anonymous"
-    ></script>
-
     <div id="root"></div>
     <div id="modal-sortable-tree-editor"></div>
-  <script type="text/javascript" src="https://editor.epicmagenta.com/editor/bundle.js"></script></body>
+
+    <script>
+      $(document).ready(function () {
+        var awsLibVer = "1.0.0";
+        var awsFrontVer = "1.0.0";
+
+        var settings = {
+          cache: false,
+          dataType: "json",
+          async: true,
+          crossDomain: true,
+          url: "https://wifeo-cms-preprod.s3.eu-west-3.amazonaws.com/wifeolib/latest.js",
+          method: "GET",
+          headers: {
+            accept: "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        };
+
+        $.ajax(settings).done(function (data) {
+          if (!localStorage.getItem("lib_src")) {
+            localStorage.setItem("lib_src", "aws");
+          }
+
+          awsLibVer = data.version;
+          console.log("lib ver.", awsLibVer);
+
+          settings.url =
+            "https://wifeo-cms-preprod.s3.eu-west-3.amazonaws.com/front/latest.js";
+
+            localStorage.setItem("lib_ver", awsLibVer);
+
+            if (
+              localStorage.getItem("lib_src") &&
+              localStorage.getItem("lib_src") === "alternative"
+            ) {
+              console.warn("loading alternatives assets");
+              const libVer = localStorage.getItem("lib_ver");
+              const frontVer = localStorage.getItem("front_ver");
+
+              addScript(
+                "https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/" +
+                  libVer +
+                  "/lib.js"
+              );
+
+              addScript(
+                "https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/1.0.0/media-library-rcpt.min.js"
+              );
+              addScript("https://editor.epicmagenta.com/editor/bundle.js");
+            } else if (
+              localStorage.getItem("lib_src") &&
+              localStorage.getItem("lib_src") === "local"
+            ) {
+              console.warn("loading alternatives assets");
+              addScript("http://localhost:4206/wifeolib.bundle.js");
+
+              addScript(
+                "https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/1.0.0/media-library-rcpt.min.js"
+              );
+              addScript("https://editor.epicmagenta.com/editor/bundle.js");
+            } else if (
+              localStorage.getItem("lib_src") &&
+              localStorage.getItem("lib_src") === "aws"
+            ) {
+              console.warn("loading alternatives assets");
+              const libVer = localStorage.getItem("lib_ver");
+              addScript(
+                "https://wifeo-cms-preprod.s3.eu-west-3.amazonaws.com/wifeolib/" +
+                  libVer +
+                  "/lib.js"
+              );
+
+              addScript(
+                "https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/1.0.0/media-library-rcpt.min.js"
+              );
+              addScript("https://editor.epicmagenta.com/editor/bundle.js");
+            } else {
+
+            }
+         
+        });
+      });
+
+      // add script file
+      function addScript(filename) {
+        var head = document.getElementsByTagName("head")[0];
+
+        var script = document.createElement("script");
+        script.src = filename;
+        script.type = "text/javascript";
+
+        head.insertBefore(script, document.getElementsByTagName("script")[0]);
+      }
+    </script>
+  </body>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
