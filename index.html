@@ -133,7 +133,7 @@
     ></script>
 
     <script src="https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/1.0.38/lib.js"
-     crossorigin="anonymous"></script> 
+     crossorigin="anonymous"></script>
 
     <script
       src="https://cdn-app-wifeosite.fra1.digitaloceanspaces.com/wifeolib/1.0.0/media-library-rcpt.min.js"
@@ -149,6 +149,47 @@
     integrity="sha384-7/Tl0k65OTvDSvtuq7aPR7aa0aCz7ZKqHsbMRLxhzueldW+9MZpCe9LB1c5UBuNS"
     crossorigin="anonymous"
   />
+  <style>
+    .draggable-component {
+      box-sizing: border-box;
+      border: solid 3px #666;
+
+      float: left;
+      cursor: grab;
+      /*         height: 50px; */
+      margin: 2px;
+      padding: 10px;
+      width: 100%;
+    }
+    .content {
+      position: relative;
+      overflow: hidden;
+      margin: auto;
+      width: 1000px;
+      text-align: left;
+    }
+    .droppable-component {
+      background: #fff;
+      min-height: 110px;
+      overflow: hidden;
+      width: 100%;
+      clear: both;
+      overflow: hidden;
+      padding: 5px;
+      box-sizing: border-box;
+      border: dashed 3px #666;
+    }
+
+    .droppable-component span {
+      display: block;
+      width: 100%;
+      text-align: center;
+      color: #666;
+      font-weight: bold;
+      /*           font-size: 30px;
+        padding: 40px 0; */
+    }
+  </style>
   <style>
     .tui-image-editor-header {
       display: none;
